@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Floating O and X background -->
+    <div class="floating">O</div>
+    <div class="floating">X</div>
+    <div class="floating">O</div>
+    <div class="floating">X</div>
+    <div class="floating">O</div>
+
+    <div class="container">
+        <h1>Tic Tac Toe</h1>
+
+        <!-- Scoreboard -->
+        <div class="scoreboard">
+            <p>You: <span id="playerScore">0</span></p>
+            <p>Computer: <span id="computerScore">0</span></p>
+            <p>Draws: <span id="drawScore">0</span></p>
+        </div>
+
+        <div class="board">
+            <div class="cell" id="0"></div>
+            <div class="cell" id="1"></div>
+            <div class="cell" id="2"></div>
+            <div class="cell" id="3"></div>
+            <div class="cell" id="4"></div>
+            <div class="cell" id="5"></div>
+            <div class="cell" id="6"></div>
+            <div class="cell" id="7"></div>
+            <div class="cell" id="8"></div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="buttons">
+            <button id="nextRound">Next Round</button>
+            <button id="restartButton">Restart Game</button>
+            <button id="changeDifficulty">Change Difficulty</button>
+        </div>
+
+        <p class="winning-message" id="winningMessage"></p>
+    </div>
+
+
+    <!-- Difficulty selection overlay -->
+<div class="overlay" id="difficultyOverlay">
+  <div class="overlay-content">
+    <h2>Select Difficulty</h2>
+    <button class="difficulty-btn" data-level="easy">🌸 Easy</button>
+    <button class="difficulty-btn" data-level="hard">🔥 Hard</button>
+  </div>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
+
+    <script src="app.js"></script>
+</body>
+</html>

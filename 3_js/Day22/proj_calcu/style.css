@@ -1,0 +1,75 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(135deg, #06B6D4, #EC4899);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#root {
+    background: linear-gradient(135deg, #60A5FA, #E879F9);
+    color:linear-gradient(135deg, #111827, #1f2937, #374151);
+    text-align: center;
+    padding: 90px;
+    border-radius: 700px;
+    border: #111827;
+    box-shadow: #111827;
+    
+}
+
+#first {
+    border-radius: 30px;
+}
+
+#sec {
+    border-radius: 30px;
+}
+
+input {
+    font-size: 15px;
+    padding: 4px;
+    margin-bottom: 10px;
+    margin-left:5px ;
+}
+
+button {
+font-size: 20px;
+margin-bottom: 15px;
+margin-top: 15px;
+border-radius: 50px;
+
+}
+
+#result{
+    font-size: 30px;
+   color:linear-gradient(135deg, #ff512f, #dd2476);
+}
+
+#add {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+#plus{
+    background: linear-gradient(120deg, #b92b27, #1565c0);
+    color: aliceblue;
+}
+
+#minus{
+    background: linear-gradient(60deg, #ff512f, #f09819);
+    color: aliceblue;
+}
+
+
+#mul{
+    background: linear-gradient(200deg, #6a0572, #d72638);
+    color: aliceblue;
+    text-align: center;
+}
+
+#div{
+    background: linear-gradient(90deg, #ff0844, #ffb199);
+    color: aliceblue;
+}

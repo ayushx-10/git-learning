@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Projects & Contacts</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>🚀 My Projects & Contacts</header>
+  
+  <main>
+    <!-- Projects Section -->
+    <section class="hidden">
+      <h2>Projects</h2>
+      <ul id="projectList" class="slider">
+        <li>
+          <img src="images/project1.jpg" alt="Project Image" class="card-img">
+          <strong>Portfolio Website</strong> - 
+          <a href="#">View</a>
+        </li>
+      </ul>
+      <form id="projectForm">
+        <input type="text" id="projectName" placeholder="Project Name" required>
+        <input type="url" id="projectLink" placeholder="Project Link (https://)" required>
+        <textarea id="projectDesc" placeholder="Project Description"></textarea>
+        <input type="text" id="projectImg" placeholder="Image path (e.g., images/project2.jpg)">
+        <button type="submit">➕ Add Project</button>
+      </form>
+    </section>
+
+    <!-- Contacts Section -->
+    <section class="hidden">
+      <h2>Contacts</h2>
+      <ul id="contactList" class="slider">
+        <li>
+          <img src="images/contact1.jpg" alt="Contact Image" class="card-img">
+          <strong>Ayush</strong> - ayush@example.com
+        </li>
+      </ul>
+      <form id="contactForm">
+        <input type="text" id="contactName" placeholder="Contact Name" required>
+        <input type="email" id="contactEmail" placeholder="Contact Email" required>
+        <input type="tel" id="contactPhone" placeholder="Contact Phone">
+        <input type="text" id="contactImg" placeholder="Image path (e.g., images/contact2.jpg)">
+        <button type="submit">➕ Add Contact</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

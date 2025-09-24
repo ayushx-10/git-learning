@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Currency Converter</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+
+
+  <div class="bubble-container"></div>
+<!-- Background Bubble Layer -->
+<div class="bubble-background"></div>
+
+
+
+<!-- nighttttttttttttttttt -->
+<button id="theme-toggle">🌙 Night Mode</button>
+
+
+<!-- Main content -->
+<div class="main-container">
+  <!-- your converter + graph UI goes here -->
+</div>
+
+
+
+
+  <!-- Netflix Intro -->
+  <div class="netflix-intro">
+    <img src="./app-icon.svg" alt="Logo" class="intro-logo" />
+  </div>
+
+  <!-- Main container with two sections -->
+  <div class="main-container">
+
+    <!-- Converter Card -->
+    <div class="wrapper">
+      <div class="app-details">
+        <img src="./1613440.webp" class="app-icon" />
+        <h1 class="app-title">Currency Converter</h1>
+      </div>
+
+      <label for="amount">Amount:</label>
+      <input type="number" id="amount" value="100" />
+
+      <div class="dropdowns">
+        <select id="from-currency-select"></select>
+        <button id="swap-button" type="button">🔄</button>
+        <select id="to-currency-select"></select>
+      </div>
+
+      <button id="convert-button" type="button">Convert</button>
+      <p id="result"></p>
+    </div>
+
+    <!-- Graph Section -->
+    <div class="graph-container">
+      <h2 id="Exchange">Exchange Rate History</h2>
+      <label for="days">Show history for:</label>
+      <select id="days">
+        <option value="7">7 Days</option>
+        <option value="30" selected>30 Days</option>
+        <option value="90">90 Days</option>
+        <option value="365">1 Year</option>
+      </select>
+      <canvas id="currencyChart"></canvas>
+    </div>
+
+
+
+<!-- Forex Quotes Section -->
+<div class="quotes-container">
+  <h2> 📢🛑LIVE FOREX NEWS</h2>
+  <p> ╰┈➤Availabble soon....</p>
+  <ul id="quotes-list"></ul>
+</div>
+
+
+  </div>
+
+  <!-- Bubbles Animation -->
+  <!-- <div class="circle">Hi</div> -->
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
+
+  <!-- Your Script -->
+  <script src="script.js"></script>
+</body>
+</html>
