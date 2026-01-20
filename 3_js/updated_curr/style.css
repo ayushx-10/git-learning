@@ -91,7 +91,7 @@ background: linear-gradient(120deg, #ff9a9e, #fecfef);
 .app-title {
   font-size: 22px;
   font-weight: 600;
-  color: black;
+  color: rgb(247, 245, 245);
 }
 
 /* Input & Dropdowns */
@@ -262,7 +262,7 @@ background: linear-gradient(120deg, #ff9a9e, #fecfef);
     color: #0f2027;
 }
 #result{
-    color: #0f2027;
+    color: #f7f9fa;
 }
 
 
@@ -308,28 +308,66 @@ background: linear-gradient(120deg, #ff9a9e, #fecfef);
 
 /* night themeeeeeeeeeeeeeeeeeee */
 /* Default Day Theme */
+/* ===================== */
+/* ☀️  Day & 🌙 Night Theme Styles */
+/* ===================== */
+
+/* Smooth transition between themes */
+body {
+  transition: background 1s ease, color 0.6s ease, backdrop-filter 0.6s ease;
+}
+
+/* ☀️ DAY MODE */
 body.day-mode {
-  background: linear-gradient(to bottom, #f5f7fa, #c3cfe2);
-  color: black;
+  background: rgba(192, 17, 17, 0.5); /* white transparent layer */
+  backdrop-filter: blur(25px); /* soft blur background */
+  color: #000; /* text becomes black */
 }
 
-body.day-mode .bubble {
-  color: rgba(0, 0, 0, 0.3);
-  text-shadow: 0 0 5px rgba(0,0,0,0.1);
+/* Adjust major containers for day mode */
+body.day-mode .wrapper,
+body.day-mode .graph-container,
+body.day-mode .quotes-container {
+  background: rgba(202, 201, 201, 0.417);
+  color: #000;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
 
-/* Night Theme */
+body.day-mode select,
+body.day-mode input,
+body.day-mode button {
+  color: #000;
+  background: rgba(255,255,255,0.7);
+}
+
+body.day-mode #convert-button {
+  background: linear-gradient(120deg, #d3cce3, #e9e4f0);
+  color: #000;
+}
+
+body.day-mode h1,
+body.day-mode h2,
+body.day-mode label,
+body.day-mode #result {
+  color: #000 !important;
+}
+
+/* 🌙 NIGHT MODE */
 body.night-mode {
-  background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
-  color: white;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
 }
 
-body.night-mode .bubble {
-  color: rgba(255, 255, 255, 0.6);
-  text-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
+/* Keep your dark containers as they are */
+body.night-mode .wrapper,
+body.night-mode .graph-container,
+body.night-mode .quotes-container {
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  backdrop-filter: blur(10px);
 }
 
-/* Toggle Button Styling */
+/* Theme Toggle Button */
 #theme-toggle {
   position: fixed;
   top: 15px;
@@ -339,9 +377,13 @@ body.night-mode .bubble {
   border: none;
   border-radius: 20px;
   cursor: pointer;
-  background: #ffffffaa;
-  transition: 0.3s;
+  background: rgba(255,255,255,0.8);
+  transition: 0.3s ease;
   z-index: 1000;
+}
+
+#theme-toggle:hover {
+  background: rgba(255,255,255,1);
 }
 
 
